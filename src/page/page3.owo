@@ -1,0 +1,46 @@
+<template lang="pug">
+.page3
+  .so.so-0
+    img.so.so-1(src="@|2218.png|")
+    img.so.so-2(src="@|2219.png|")
+    img.so.so-3(src="@|1937.png|")
+    img.so.so-4(src="@|439.jpg|")
+</template>
+<script>
+module.exports = {
+  show: function () {
+    setTimeout(() => {
+      owo.go('page4//rotateRightSideFirst/moveFromRight&&delay200//rotateLeftSideFirst/moveFromLeft&&delay200')
+    }, 2000);
+  }
+}
+</script>
+<style lang="less">
+.so-0 {
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 1508px;
+  z-index: 0;;
+}
+.so-1 {
+  left: 271px;
+  top: 551px;
+  z-index: -1;
+}
+.so-2 {
+  left: 275px;
+  top: 745px;
+  z-index: -2;
+}
+.so-3 {
+  left: 94px;
+  top: 691px;
+  z-index: -3;
+}
+.so-4 {
+  left: 0px;
+  top: 0px;
+  z-index: -4;
+}
+</style>
