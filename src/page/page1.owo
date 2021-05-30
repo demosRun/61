@@ -1,8 +1,9 @@
 <template lang="pug">
 .page-1
-  .so.so-0
-    img.so.so-1(src="@|1758.png|" o-animation="shrink" go="page2//rotateRightSideFirst/moveFromRight&&delay200//rotateLeftSideFirst/moveFromLeft&&delay200")
-    img.so.so-2(src="@|64.jpg|")
+  .scale-box
+    .so.so-0
+      img.so.so-1(src="@|1758.png|" o-animation="shrink" go="page2//scaleDownCenter/scaleUpCenter&&delay400//scaleDownCenter/scaleUpCenter&&delay400")
+      img.so.so-2(src="@|64.jpg|")
 </template>
 
 <script>

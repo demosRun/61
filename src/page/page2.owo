@@ -1,39 +1,80 @@
 <template lang="pug">
 .page2
-  .so.so-0
-    img.so.so-1(src="@|1804.png|" o-animation="shrink" go="page3//rotateRightSideFirst/moveFromRight&&delay200//rotateLeftSideFirst/moveFromLeft&&delay200")
-    img.so.so-2(src="@|1802.png|")
-    img.so.so-3(src="@|2173.png|")
-    img.so.so-4(src="@|2174.png|")
-    .so.so-5
-      img.so.so-6(src="@|1778.png|")
-      img.so.so-7(src="@|1776.png|")
-      img.so.so-8(src="@|1774.png|")
-      img.so.so-9(src="@|1772.png|")
-      img.so.so-10(src="@|1800.png|")
-      img.so.so-11(src="@|1798.png|")
-      img.so.so-12(src="@|1796.png|")
-      img.so.so-13(src="@|1780.png|")
-      img.so.so-14(src="@|1784.png|")
-      img.so.so-15(src="@|1792.png|")
-      img.so.so-16(src="@|1788.png|")
-      img.so.so-17(src="@|1786.png|")
-      img.so.so-18(src="@|1790.png|")
-      img.so.so-19(src="@|1794.png|")
-      img.so.so-20(src="@|1782.png|")
-    img.so.so-21(src="@|1764.jpg|")
-    //- 遮蔽罩
-    .so.blinker-box(style="display:none;")
-      img.so.anse(src="@|anse.png|")
-      img.so.ani-1(src="@|1935.png|")
-      img.so.ani-2(src="@|ani-2.png|")
+  .scale-box
+    //- 首屏
+    .so.so-3-0
+      img.so.so-3-1(src="@|1758.png|" o-animation="shrink" o-tap="document.querySelector('.so-3-0').classList.add('open')")
+      img.so.so-3-2(src="@|64.jpg|")
+    //- 次屏幕
+    .so.so-0
+      img.so.so-1.next(src="@|1804.png|" o-animation="shrink" go="name//rotateRightSideFirst/moveFromRight&&delay200//rotateLeftSideFirst/moveFromLeft&&delay200")
+      .so.so-2.gouwu(o-tap="gouwu")
+        .num 0
+      img.so.so-3(src="@|2173.png|")
+      img.so.so-4(src="@|2174.png|")
+      .scrro-box
+        .scrro-box-item
+          .left
+            .so.so-5
+              img.so.so-6.select-1(src="@|1778.png|" o-tap="select(1)")
+              img.so.so-7.select-2(src="@|1776.png|" o-tap="select(2)")
+              img.so.so-8.select-3(src="@|1774.png|" o-tap="select(3)")
+              img.so.so-9.select-4(src="@|1772.png|" o-tap="select(4)")
+              img.so.so-10.select-5(src="@|1800.png|" o-tap="select(5)")
+              img.so.so-11.select-6(src="@|1798.png|" o-tap="select(6)")
+              img.so.so-12.select-7(src="@|1796.png|" o-tap="select(7)")
+              img.so.so-13.select-8(src="@|1780.png|" o-tap="select(8)")
+              img.so.so-14.select-9(src="@|1784.png|" o-tap="select(9)")
+              img.so.so-15.select-10(src="@|1792.png|" o-tap="select(10)")
+              img.so.so-16.select-11(src="@|1788.png|" o-tap="select(11)")
+              img.so.so-17.select-12(src="@|1786.png|" o-tap="select(12)")
+              img.so.so-18.select-13(src="@|1790.png|" o-tap="select(13)")
+              img.so.so-19.select-14(src="@|1794.png|" o-tap="select(14)")
+              img.so.so-20.select-15(src="@|1782.png|" o-tap="select(15)")
+          .right
+            .so.so-2-0
+              img.so.so-2-1.select-16(src="@|2082.png|" o-tap="select(16)")
+              img.so.so-2-2.select-17(src="@|2068.png|" o-tap="select(17)")
+              img.so.so-2-3.select-18(src="@|2080.png|" o-tap="select(18)")
+              img.so.so-2-4.select-19(src="@|2072.png|" o-tap="select(19)")
+              img.so.so-2-5.select-20(src="@|2092.png|" o-tap="select(20)")
+              img.so.so-2-6.select-21(src="@|2074.png|" o-tap="select(21)")
+              img.so.so-2-7.select-22(src="@|2086.png|" o-tap="select(22)")
+              img.so.so-2-8.select-23(src="@|2078.png|" o-tap="select(23)")
+              img.so.so-2-9.select-24(src="@|2076.png|" o-tap="select(24)")
+              img.so.so-2-10.select-25(src="@|2088.png|" o-tap="select(25)")
+              img.so.so-2-11.select-26(src="@|2066.png|" o-tap="select(26)")
+              img.so.so-2-12.select-27(src="@|2099.png|" o-tap="select(27)")
+              img.so.so-2-13.select-28(src="@|2101.png|" o-tap="select(28)")
+              img.so.so-2-14.select-29(src="@|2070.png|" o-tap="select(29)")
+              img.so.so-2-15.select-30(src="@|2094.png|" o-tap="select(30)")
+              img.so.so-2-16.select-31(src="@|2064.png|" o-tap="select(31)")
+      img.so.so-21(src="@|1764.jpg|")
+      img.so.haode(src="@|haode.png|" o-animation="shrink" o-tap="showShop")
+      //- 遮蔽罩
+      .so.blinker-box(style="display:none;")
+        img.so.anse(src="@|anse.png|")
+        img.so.ani-1(src="@|1935.png|")
+        img.so.ani-2(src="@|ani-2.png|")
+      //- 购物车
+      .so.gwc-0
+        img.so.gwc-1(src="@|gwc-2134.png|" o-tap="document.querySelector('.gwc-0').style.display = 'none'")
+        img.so.gwc-2(src="@|gwc-2130.png|")
+        .so.gouwu-2
+          .num 0
+        ul.item-show-box
 </template>
 <script>
 module.exports = {
+  data: {
+    playing: true,
+    selectList: {}
+  },
   created: function () {
     // 售货员动画
     const box1 = this.query('.blinker-box')
     box1.style.display = 'block'
+    const that = this
     function changeImg() {
       console.log('便动画')
       if (box1.className.indexOf('ani') == -1) {
@@ -42,12 +83,88 @@ module.exports = {
         box1.classList.remove('ani')
       }
       setTimeout(() => {
-        changeImg()
+        if (that.data.playing) changeImg()
       }, 1000);
     }
     setTimeout(() => {
       changeImg()
     }, 1000);
+  },
+  showShop: function () {
+    new Audio("@|click.mp3|").play()
+    console.log(this.$el)
+    this.data.playing = false
+    this.$el.classList.add('shop')
+    owo.tool.toast('货架可以左右滑动哦!')
+  },
+  gouwu: function () {
+    new Audio("@|click.mp3|").play()
+    this.query('.gwc-0').style.display = 'block'
+  },
+  select: function (ind) {
+    new Audio("@|click.mp3|").play()
+    this.data.selectList[ind] = this.$target.src
+    let buyNum = 0
+    let newHtml = ''
+    for (const key in this.data.selectList) {
+      if (Object.hasOwnProperty.call(this.data.selectList, key)) {
+        const element = this.data.selectList[key];
+        if (element) {
+          buyNum++
+          newHtml += `<div class="item" style="background-image:url(${element});" o-tap="noSelect(${key})"></div>`
+          document.querySelector('.select-' + key).classList.add('run')
+          setTimeout(() => {
+            document.querySelector('.select-' + key).style.display = 'none'
+            document.querySelector('.select-' + key).classList.remove('run')
+          }, 2000);
+          // document.querySelector('.select-' + key).style.display = 'none'
+        } else {
+          document.querySelector('.select-' + key).style.display = 'block'
+        }
+      }
+    }
+    if (buyNum >= 1) {
+      this.query('.next').style.display = 'block'
+    } else {
+      this.query('.next').style.display = 'none'
+    }
+    document.querySelector('.gouwu .num').innerText = buyNum
+    document.querySelector('.gouwu-2 .num').innerText = buyNum
+    console.log(this.data.selectList)
+    document.querySelector('.item-show-box').innerHTML = newHtml
+    setTimeout(() => {
+      this.handleEvent()
+    }, 0);
+    this.query('.gouwu').classList.add('ex')
+    setTimeout(() => {
+      this.query('.gouwu').classList.remove('ex')
+    }, 1000);
+  },
+  noSelect: function (ind) {
+    new Audio("@|click.mp3|").play()
+    this.data.selectList[ind] = null
+    let buyNum = 0
+    let newHtml = ''
+    for (const key in this.data.selectList) {
+      if (Object.hasOwnProperty.call(this.data.selectList, key)) {
+        const element = this.data.selectList[key];
+        if (element) {
+          buyNum++
+          newHtml += `<div class="item" style="background-image:url(${element});" o-tap="noSelect(${key})"></div>`
+          document.querySelector('.select-' + key).style.display = 'none'
+          // document.querySelector('.select-' + key).classList.add('run')
+        } else {
+          document.querySelector('.select-' + key).style.display = 'block'
+        }
+      }
+    }
+    document.querySelector('.gouwu .num').innerText = buyNum
+    document.querySelector('.gouwu-2 .num').innerText = buyNum
+    console.log(this.data.selectList)
+    document.querySelector('.item-show-box').innerHTML = newHtml
+    setTimeout(() => {
+      this.handleEvent()
+    }, 0);
   }
 }
 </script>
@@ -80,8 +197,8 @@ module.exports = {
   z-index: -4;
 }
 .so-5 {
-  left: 11px;
-  top: 177px;
+  left: 0;
+  top: 0;
   width: 721px;
   height: 777px;
   z-index: -5;;
@@ -108,12 +225,12 @@ module.exports = {
 }
 .so-10 {
   left: 490px;
-  top: 645px;
+  top: 593px;
   z-index: -10;
 }
 .so-11 {
   left: 189px;
-  top: 683px;
+  top: 642px;
   z-index: -11;
 }
 .so-12 {
@@ -189,11 +306,259 @@ module.exports = {
   top: 0;
   width: 100%;
   height: 100%;
+  transition: opacity 2s;
+  pointer-events: none;
 }
 .anse {
   left: 0;
   top: 0;
   width: 100%;
   z-index: 0;
+}
+.haode {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 244px;
+  margin: auto;
+  z-index: 999;
+}
+.left, .right {
+  height: 100%;
+  width: 50%;
+  position: relative;
+  .so {
+    z-index: 0;
+  }
+}
+.scrro-box {
+  position: absolute;
+  height: 1000px;
+  width: 750px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 173px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  
+  .scrro-box-item {
+    display: flex;
+  }
+}
+.scrro-box-item {
+  width: 200%;
+  height: 100%;
+}
+.so-2-0 {
+  left: 0px;
+  top: 0;
+  width: 750px;
+  height: 783px;
+  z-index: 0;;
+}
+.so-2-1 {
+  left: 222px;
+  top: 457px;
+  z-index: -1;
+}
+.so-2-2 {
+  left: 369px;
+  top: 0px;
+  z-index: -2;
+}
+.so-2-3 {
+  left: 0px;
+  top: 458px;
+  z-index: -3;
+}
+.so-2-4 {
+  left: 29px;
+  top: 209px;
+  z-index: -4;
+}
+.so-2-5 {
+  left: 510px;
+  top: 623px;
+  z-index: -5;
+}
+.so-2-6 {
+  left: 239px;
+  top: 247px;
+  z-index: -6;
+}
+.so-2-7 {
+  left: 623px;
+  top: 460px;
+  z-index: -7;
+}
+.so-2-8 {
+  left: 584px;
+  top: 251px;
+  z-index: -8;
+}
+.so-2-9 {
+  left: 442px;
+  top: 205px;
+  z-index: -9;
+}
+.so-2-10 {
+  left: 12px;
+  top: 672px;
+  z-index: -10;
+}
+.so-2-11 {
+  left: 200px;
+  top: 17px;
+  z-index: -11;
+}
+.so-2-12 {
+  left: 353px;
+  top: 687px;
+  z-index: -12;
+}
+.so-2-13 {
+  left: 225px;
+  top: 653px;
+  z-index: -13;
+}
+.so-2-14 {
+  left: 617px;
+  top: 35px;
+  z-index: -14;
+}
+.so-2-15 {
+  left: 455px;
+  top: 488px;
+  z-index: -15;
+}
+.so-2-16 {
+  left: 30px;
+  top: 0px;
+  z-index: -16;
+}
+.gwc-0 {
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 1508px;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.gwc-1 {
+  left: 581px;
+  top: 294px;
+  z-index: -1;
+}
+.gwc-2 {
+  left: 39px;
+  top: 259px;
+  z-index: -2;
+}
+.gwc-3 {
+  left: 0px;
+  top: 0px;
+  z-index: -3;
+}
+.gwc-0 {
+  display: none;
+}
+.gouwu {
+  background-image: url('@|1802.png|');
+  width: 115px;
+  height: 98px;
+  .num {
+    color: white;
+    position: absolute;
+    font-size: 26px;
+    right: 0;
+    width: 32px;
+    text-align: center;
+    line-height: 34px;
+  }
+}
+.gouwu-2 {
+  background-image: url('@|1802.png|');
+  width: 115px;
+  height: 98px;
+  left: 80px;
+  top: 962px;
+  .num {
+    color: white;
+    position: absolute;
+    font-size: 26px;
+    right: 0;
+    width: 32px;
+    text-align: center;
+    line-height: 34px;
+  }
+}
+.item-show-box {
+  position: absolute;
+  width: 560px;
+  top: 400px;
+  left: 40px;
+  right: 0;
+  margin: auto;
+  height: 540px;
+  overflow: auto;
+  .item {
+    width: 185px;
+    height: 185px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 70%;
+    float: left;
+  }
+}
+.scrro-box .run {
+  left: 567px;
+  top: 1200px;
+  position: fixed;
+  transition: all 1s;
+  opacity: 0;
+  transform: scale(0.3, 0.3)
+}
+.next {
+  display: none;
+}
+@keyframes exani {
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.2);
+    }
+    100%{
+      transform: scale(1);
+    }
+}
+
+.ex {
+  animation: exani 1s 1 0.6s linear;
+}
+.so-3-0 {
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 1508px;
+  z-index: 10;
+  transition: all 2.5s;
+}
+.so-3-0.open {
+  transform: scale(1.6);
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+}
+.so-3-1 {
+  left: 294px;
+  top: 1037px;
+  z-index: 12;
+}
+.so-3-2 {
+  left: 0px;
+  top: 0px;
+  z-index: 10;
 }
 </style>

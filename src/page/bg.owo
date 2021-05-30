@@ -1,0 +1,17 @@
+<template lang="pug">
+.bg.scale-box
+</template>
+<script>
+module.exports = {
+}
+</script>
+<style lang="less">
+.bg {
+  background-image: url('@|beijing.gif|');
+  position: fixed;
+  left: 0;
+  top: 0;
+  user-select: none;
+  pointer-events: none;
+}
+</style>

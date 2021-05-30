@@ -1,17 +1,21 @@
 <template lang="pug">
 .page3
-  .so.so-0
-    img.so.so-1(src="@|2218.png|")
-    img.so.so-2(src="@|2219.png|")
-    img.so.so-3(src="@|1937.png|")
-    img.so.so-4(src="@|439.jpg|")
+  .scale-box
+    .so.so-0
+      img.so.so-1(src="@|2218.png|")
+      img.so.so-2(src="@|2219.png|")
+      img.so.so-3(src="@|1937.png|")
+      img.so.so-4(src="@|439.jpg|")
+      .press
 </template>
 <script>
 module.exports = {
   show: function () {
+    document.querySelector('.press').style.width = '584px'
     setTimeout(() => {
+      
       owo.go('page4//rotateRightSideFirst/moveFromRight&&delay200//rotateLeftSideFirst/moveFromLeft&&delay200')
-    }, 2000);
+    }, 4000);
   }
 }
 </script>
@@ -42,5 +46,15 @@ module.exports = {
   left: 0px;
   top: 0px;
   z-index: -4;
+}
+.press {
+  position: absolute;
+  top: 695px;
+  height: 31px;
+  left: 100px;
+  width: 0;
+  background-color: #473c32;
+  border-radius: 27px;
+  transition: width 3s;
 }
 </style>

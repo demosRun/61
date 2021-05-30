@@ -1,6 +1,6 @@
 <template lang="pug">
-.loading-box
-  img.loading(src="https://cunchu.site/ozzx/resource/loadingLogo.png")
+.loading-box.scale-box
+  img.loading(src="@|dada.png|")
   .loading-bar
     .num-bar
   span.text Loading
@@ -11,7 +11,63 @@
   module.exports = {
     data: {
       imgList: [
-        ""
+        '@|share-top.png|',
+        '@|439.jpg|',
+        '@|name-17.jpg|',
+        '@|1764.jpg|',
+        '@|share.png|',
+        '@|loading-bg.png|',
+        '@|64.jpg|',
+        '@|gwc-2130.png|',
+        '@|share-bottom.png|',
+        '@|ani-2.png|',
+        '@|1935.png|',
+        '@|name-55.png|',
+        '@|name-56.png|',
+        '@|2068.png|',
+        '@|2082.png|',
+        '@|2072.png|',
+        '@|2092.png|',
+        '@|2080.png|',
+        '@|1778.png|',
+        '@|1772.png|',
+        '@|1784.png|',
+        '@|2076.png|',
+        '@|2066.png|',
+        '@|1782.png|',
+        '@|1786.png|',
+        '@|2173.png|',
+        '@|2078.png|',
+        '@|2064.png|',
+        '@|2088.png|',
+        '@|2218.png|',
+        '@|2074.png|',
+        '@|2101.png|',
+        '@|dada.png|',
+        '@|2070.png|',
+        '@|1790.png|',
+        '@|1798.png|',
+        '@|1800.png|',
+        '@|1796.png|',
+        '@|1774.png|',
+        '@|1792.png|',
+        '@|2174.png|',
+        '@|1776.png|',
+        '@|1788.png|',
+        '@|2099.png|',
+        '@|1794.png|',
+        '@|2094.png|',
+        '@|1780.png|',
+        '@|2086.png|',
+        '@|1804.png|',
+        '@|1758.png|',
+        '@|2219.png|',
+        '@|1802.png|',
+        '@|gwc-2134.png|',
+        '@|xiehaol.png|',
+        '@|haode.png|',
+        '@|1937.png|',
+        '@|anse.png|',
       ]
     },
     show: function () {
@@ -19,7 +75,7 @@
       const numBar = owo.query('.num-bar')[0]
       this.preloadImages(this.data.imgList, (e) => {
         setTimeout(() => {
-          owo.go('page1////true')
+          owo.go('page2////true')
         }, 500)
       }, (num) => {
         numBar.style.width = num + '%'
@@ -61,7 +117,7 @@
 .loading-box {
   width: 100%;
   height: 100%;
-  background-image: url('https://cunchu.site/ozzx/resource/lanse.jpg');
+  background-image: url('@|loading-bg.png|');
 }
 .loading {
   position: absolute;
@@ -76,17 +132,17 @@
   top: 0%;
   bottom: 0%;
   height: 20px;
-  background-color: white;
+  background-color: transparent;
   width: 80%;
   margin: auto;
   left: 0;
   right: 0;
   border-radius: 20px;
-  padding: 10px;
-  box-shadow: 2px 3px 9px #5d739c;
+  padding: 7px;
+  border: 2px solid #2d1a0a;
 }
 .num-bar {
-  background-color: #e47d6e;
+  background-color: #2d1a0a;
   height: 20px;
   border-radius: 20px;
   width: 0%;
@@ -102,7 +158,7 @@
   font-size: 36px;
   width: 100%;
   text-align: center;
-  color: white;
+  color: #2d1a0a;
   font-weight: bold;
 }
 .text {

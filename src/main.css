@@ -54,3 +54,16 @@ h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, bu
 .so {
   position: absolute;
 }
+
+.shop .haode {
+  display:  none;
+}
+  
+.shop  .gouwu {
+  display: block;
+}
+
+.shop .blinker-box {
+  opacity: 0;
+  user-select: none;
+}

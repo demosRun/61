@@ -1,138 +1,417 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <!-- 页面的元信息 -->
-    <title>{TAG_14226_TAG}</title>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
-    <meta name="format-detection" content="telephone=no, email=no"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="white"/>
-    <meta name="renderer" content="webkit"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta name="filetype" content="1"/>
-    <meta name="publishedtype" content="1"/>
-    <meta name="pagetype" content="2"/>
-    <meta name="screen-orientation" content="landscape"/>
-    <meta name="x5-orientation" content="landscape"/>
-    <meta name="full-screen" content="yes"/>
-    <meta name="x5-fullscreen" content="true"/>
-    <meta name="browsermode" content="application"/>
-    <meta name="x5-page-mode" content="app"/>
-    
-      <!-- 页面主样式文件 -->
-      <link charset="utf-8"  rel="stylesheet" href="./static/css/owo.core.css">
-      
-    <!-- 附属css文件 -->
-    <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
-      
-  </head>
-  <body>
+
+<head>
+  <!-- 页面的元信息 -->
+  <title>{TAG_14226_TAG}</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no, email=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="white" />
+  <meta name="renderer" content="webkit" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="filetype" content="1" />
+  <meta name="publishedtype" content="1" />
+  <meta name="pagetype" content="2" />
+  <meta name="screen-orientation" content="landscape" />
+  <meta name="x5-orientation" content="landscape" />
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="browsermode" content="application" />
+  <meta name="x5-page-mode" content="app" />
+
+  <!-- 页面主样式文件 -->
+  <link charset="utf-8" rel="stylesheet" href="./static/css/owo.core.css">
+
+  <!-- 附属css文件 -->
+  <link rel="stylesheet" href="./static/css/main.css" charset="utf-8">
+
+</head>
+
+<body>
+
+  <!-- 页面[loading]-->
+  <div class="loading-box scale-box page" template="loading" style="display: none;">
+    <img class="loading" src="./static/resource/dada.png">
+    <div class="loading-bar">
+      <div class="num-bar"></div>
+    </div>
+    <span class="text">Loading</span>
+    <div class="num">0%</div>
+  </div>
+  <!-- 页面[page1]-->
+  <div class="page-1 page" template="page1" style="display: none;">
     <div class="scale-box">
-    <!-- 页面[loading]-->
-    <div class="loading-box page" template="loading" style="display: none;"><img class="loading" src="https://cunchu.site/ozzx/resource/loadingLogo.png"><div class="loading-bar"><div class="num-bar"></div></div><span class="text">Loading</span><div class="num">0%</div></div>
-    <!-- 页面[page1]-->
-    <div class="page-1 page" template="page1" style="display: none;"><div class="so so-0"><img class="so so-1" src="./static/resource/1758.png" o-animation="shrink" go="page2//rotateRightSideFirst/moveFromRight&amp;&amp;delay200//rotateLeftSideFirst/moveFromLeft&amp;&amp;delay200"><img class="so so-2" src="./static/resource/64.jpg"></div></div>
-    <!-- 页面[page2]-->
-    <div class="page2 page" template="page2" style="display: none;"><div class="so so-0"><img class="so so-1" src="./static/resource/1804.png" o-animation="shrink" go="page3//rotateRightSideFirst/moveFromRight&amp;&amp;delay200//rotateLeftSideFirst/moveFromLeft&amp;&amp;delay200"><img class="so so-2" src="./static/resource/1802.png"><img class="so so-3" src="./static/resource/2173.png"><img class="so so-4" src="./static/resource/2174.png"><div class="so so-5"><img class="so so-6" src="./static/resource/1778.png"><img class="so so-7" src="./static/resource/1776.png"><img class="so so-8" src="./static/resource/1774.png"><img class="so so-9" src="./static/resource/1772.png"><img class="so so-10" src="./static/resource/1800.png"><img class="so so-11" src="./static/resource/1798.png"><img class="so so-12" src="./static/resource/1796.png"><img class="so so-13" src="./static/resource/1780.png"><img class="so so-14" src="./static/resource/1784.png"><img class="so so-15" src="./static/resource/1792.png"><img class="so so-16" src="./static/resource/1788.png"><img class="so so-17" src="./static/resource/1786.png"><img class="so so-18" src="./static/resource/1790.png"><img class="so so-19" src="./static/resource/1794.png"><img class="so so-20" src="./static/resource/1782.png"></div><img class="so so-21" src="./static/resource/1764.jpg"><div class="so blinker-box" style="display:none;"><img class="so anse" src="./static/resource/anse.png"><img class="so ani-1" src="./static/resource/1935.png"><img class="so ani-2" src="./static/resource/ani-2.png"></div></div></div>
-    <!-- 页面[page3]-->
-    <div class="page3 page" template="page3" style="display: none;"><div class="so so-0"><img class="so so-1" src="./static/resource/2218.png"><img class="so so-2" src="./static/resource/2219.png"><img class="so so-3" src="./static/resource/1937.png"><img class="so so-4" src="./static/resource/439.jpg"></div></div>
-    <!-- 页面[page4]-->
-    <div class="page4 page" template="page4" style="display: none;"></div></div>
-    
-<!-- 框架script文件 -->
-<script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
-<script type="text/javascript" charset="UTF-8">
-owo.script = {
-  "loading": {
-    "data": {
-      "imgList": [""]
-    },
-    "show": function show() {
-      var mum = owo.query('.num')[0];
-      var numBar = owo.query('.num-bar')[0];
-      this.preloadImages(this.data.imgList, function (e) {
-        setTimeout(function () {
-          owo.go('page1////true');
-        }, 500);
-      }, function (num) {
-        numBar.style.width = num + '%';
-        mum.innerHTML = num + '%';
-      });
-    },
-    "preloadImage": function preloadImage(src, successFn) {
-      var image = new Image();
-      image.src = src;
+      <div class="so so-0">
+        <img class="so so-1" src="./static/resource/1758.png" o-animation="shrink" go="page2//scaleDownCenter/scaleUpCenter&amp;&amp;delay400//scaleDownCenter/scaleUpCenter&amp;&amp;delay400">
+        <img class="so so-2" src="./static/resource/64.jpg">
+      </div>
+    </div>
+  </div>
+  <!-- 页面[page2]-->
+  <div class="page2 page" template="page2" style="display: none;">
+    <div class="scale-box">
+      <div class="so so-3-0">
+        <img class="so so-3-1" src="./static/resource/1758.png" o-animation="shrink" o-tap="document.querySelector('.so-3-0').classList.add('open')">
+        <img class="so so-3-2" src="./static/resource/64.jpg">
+      </div>
+      <div class="so so-0">
+        <img class="so so-1 next" src="./static/resource/1804.png" o-animation="shrink" go="name//rotateRightSideFirst/moveFromRight&amp;&amp;delay200//rotateLeftSideFirst/moveFromLeft&amp;&amp;delay200">
+        <div class="so so-2 gouwu" o-tap="gouwu">
+          <div class="num">0</div>
+        </div>
+        <img class="so so-3" src="./static/resource/2173.png">
+        <img class="so so-4" src="./static/resource/2174.png">
+        <div class="scrro-box">
+          <div class="scrro-box-item">
+            <div class="left">
+              <div class="so so-5">
+                <img class="so so-6 select-1" src="./static/resource/1778.png" o-tap="select(1)">
+                <img class="so so-7 select-2" src="./static/resource/1776.png" o-tap="select(2)">
+                <img class="so so-8 select-3" src="./static/resource/1774.png" o-tap="select(3)">
+                <img class="so so-9 select-4" src="./static/resource/1772.png" o-tap="select(4)">
+                <img class="so so-10 select-5" src="./static/resource/1800.png" o-tap="select(5)">
+                <img class="so so-11 select-6" src="./static/resource/1798.png" o-tap="select(6)">
+                <img class="so so-12 select-7" src="./static/resource/1796.png" o-tap="select(7)">
+                <img class="so so-13 select-8" src="./static/resource/1780.png" o-tap="select(8)">
+                <img class="so so-14 select-9" src="./static/resource/1784.png" o-tap="select(9)">
+                <img class="so so-15 select-10" src="./static/resource/1792.png" o-tap="select(10)">
+                <img class="so so-16 select-11" src="./static/resource/1788.png" o-tap="select(11)">
+                <img class="so so-17 select-12" src="./static/resource/1786.png" o-tap="select(12)">
+                <img class="so so-18 select-13" src="./static/resource/1790.png" o-tap="select(13)">
+                <img class="so so-19 select-14" src="./static/resource/1794.png" o-tap="select(14)">
+                <img class="so so-20 select-15" src="./static/resource/1782.png" o-tap="select(15)">
+              </div>
+            </div>
+            <div class="right">
+              <div class="so so-2-0">
+                <img class="so so-2-1 select-16" src="./static/resource/2082.png" o-tap="select(16)">
+                <img class="so so-2-2 select-17" src="./static/resource/2068.png" o-tap="select(17)">
+                <img class="so so-2-3 select-18" src="./static/resource/2080.png" o-tap="select(18)">
+                <img class="so so-2-4 select-19" src="./static/resource/2072.png" o-tap="select(19)">
+                <img class="so so-2-5 select-20" src="./static/resource/2092.png" o-tap="select(20)">
+                <img class="so so-2-6 select-21" src="./static/resource/2074.png" o-tap="select(21)">
+                <img class="so so-2-7 select-22" src="./static/resource/2086.png" o-tap="select(22)">
+                <img class="so so-2-8 select-23" src="./static/resource/2078.png" o-tap="select(23)">
+                <img class="so so-2-9 select-24" src="./static/resource/2076.png" o-tap="select(24)">
+                <img class="so so-2-10 select-25" src="./static/resource/2088.png" o-tap="select(25)">
+                <img class="so so-2-11 select-26" src="./static/resource/2066.png" o-tap="select(26)">
+                <img class="so so-2-12 select-27" src="./static/resource/2099.png" o-tap="select(27)">
+                <img class="so so-2-13 select-28" src="./static/resource/2101.png" o-tap="select(28)">
+                <img class="so so-2-14 select-29" src="./static/resource/2070.png" o-tap="select(29)">
+                <img class="so so-2-15 select-30" src="./static/resource/2094.png" o-tap="select(30)">
+                <img class="so so-2-16 select-31" src="./static/resource/2064.png" o-tap="select(31)">
+              </div>
+            </div>
+          </div>
+        </div>
+        <img class="so so-21" src="./static/resource/1764.jpg">
+        <img class="so haode" src="./static/resource/haode.png" o-animation="shrink" o-tap="showShop">
+        <div class="so blinker-box" style="display:none;">
+          <img class="so anse" src="./static/resource/anse.png">
+          <img class="so ani-1" src="./static/resource/1935.png">
+          <img class="so ani-2" src="./static/resource/ani-2.png">
+        </div>
+        <div class="so gwc-0">
+          <img class="so gwc-1" src="./static/resource/gwc-2134.png" o-tap="document.querySelector('.gwc-0').style.display = 'none'">
+          <img class="so gwc-2" src="./static/resource/gwc-2130.png">
+          <div class="so gouwu-2">
+            <div class="num">0</div>
+          </div>
+          <ul class="item-show-box"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 页面[page3]-->
+  <div class="page3 page" template="page3" style="display: none;">
+    <div class="scale-box">
+      <div class="so so-0">
+        <img class="so so-1" src="./static/resource/2218.png">
+        <img class="so so-2" src="./static/resource/2219.png">
+        <img class="so so-3" src="./static/resource/1937.png">
+        <img class="so so-4" src="./static/resource/439.jpg">
+        <div class="press"></div>
+      </div>
+    </div>
+  </div>
+  <!-- 页面[page4]-->
+  <div class="page4 page" template="page4" style="display: none;">
+    <div class="share-box">
+      <div class="item-box"></div>
+      <img class="bottom" src="./static/resource/share-bottom.png">
+      <div class="num">0</div>
+      <div class="name"> </div>
+    </div>
+  </div>
+  <!-- 页面[name]-->
+  <div class="name page" template="name" style="display: none;">
+    <div class="scale-box">
+      <img class="so so-0" src="./static/resource/name-17.jpg">
+      <img class="so so-1" src="./static/resource/name-56.png">
+      <img class="so so-2" src="./static/resource/name-55.png">
+      <input type="text">
+      <img class="so xiehaole" src="./static/resource/xiehaol.png" go="page3//rotateRightSideFirst/moveFromRight&amp;&amp;delay200//rotateLeftSideFirst/moveFromLeft&amp;&amp;delay200">
+    </div>
+  </div>
+  <!-- 插件[bg]-->
+  <div class="bg scale-box owo-block" template="bg" style="display: none;"></div>
+  <!-- 插件[music]-->
+  <div class="music-menu owo-block" template="music" style="display: none;">
+    <img class="music-icon" src="https://cunchu.site/ozzx/resource/music.png" o-tap="switchPlay">
+  </div>
 
-      image.onload = function () {
-        successFn && successFn(src);
-      };
-
-      image.onerror = function (error) {
-        successFn && successFn(src);
-      };
-    },
-    "preloadImages": function preloadImages(srcs, doneFn, progressFn) {
-      var _this = this;
-
-      if (!Array.isArray(srcs)) {
-        console.log('第一个参数只能是一个数组');
-      } else {
-        var allCount = srcs.length;
-        var doneCount = 0;
-        srcs.forEach(function (srcItem) {
-          _this.preloadImage(srcItem, function () {
-            doneCount++;
-            progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
-
-            if (doneCount === allCount) {
-              doneFn && doneFn();
-            }
+  <!-- 框架script文件 -->
+  <script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+    // 模块 music 的script代码
+    // 微信自动播放音乐
+    document.addEventListener("WeixinJSBridgeReady", function() {
+      owo.script.music.play();
+    }, false);
+    owo.script = {
+      "loading": {
+        "data": {
+          "imgList": ["./static/resource/share-top.png", "./static/resource/439.jpg", "./static/resource/name-17.jpg", "./static/resource/1764.jpg", "./static/resource/share.png", "./static/resource/loading-bg.png", "./static/resource/64.jpg", "./static/resource/gwc-2130.png", "./static/resource/share-bottom.png", "./static/resource/ani-2.png", "./static/resource/1935.png", "./static/resource/name-55.png", "./static/resource/name-56.png", "./static/resource/2068.png", "./static/resource/2082.png", "./static/resource/2072.png", "./static/resource/2092.png", "./static/resource/2080.png", "./static/resource/1778.png", "./static/resource/1772.png", "./static/resource/1784.png", "./static/resource/2076.png", "./static/resource/2066.png", "./static/resource/1782.png", "./static/resource/1786.png", "./static/resource/2173.png", "./static/resource/2078.png", "./static/resource/2064.png", "./static/resource/2088.png", "./static/resource/2218.png", "./static/resource/2074.png", "./static/resource/2101.png", "./static/resource/dada.png", "./static/resource/2070.png", "./static/resource/1790.png", "./static/resource/1798.png", "./static/resource/1800.png", "./static/resource/1796.png", "./static/resource/1774.png", "./static/resource/1792.png", "./static/resource/2174.png", "./static/resource/1776.png", "./static/resource/1788.png", "./static/resource/2099.png", "./static/resource/1794.png", "./static/resource/2094.png", "./static/resource/1780.png", "./static/resource/2086.png", "./static/resource/1804.png", "./static/resource/1758.png", "./static/resource/2219.png", "./static/resource/1802.png", "./static/resource/gwc-2134.png", "./static/resource/xiehaol.png", "./static/resource/haode.png", "./static/resource/1937.png", "./static/resource/anse.png"]
+        },
+        "show": function show() {
+          var mum = owo.query('.num')[0];
+          var numBar = owo.query('.num-bar')[0];
+          this.preloadImages(this.data.imgList, function(e) {
+            setTimeout(function() {
+              owo.go('page2////true');
+            }, 500);
+          }, function(num) {
+            numBar.style.width = num + '%';
+            mum.innerHTML = num + '%';
           });
-        });
-      }
-    }
-  },
-  "page1": {},
-  "page2": {
-    "created": function created() {
-      // 售货员动画
-      var box1 = this.query('.blinker-box');
-      box1.style.display = 'block';
+        },
+        "preloadImage": function preloadImage(src, successFn) {
+          var image = new Image();
+          image.src = src;
 
-      function changeImg() {
-        console.log('便动画');
+          image.onload = function() {
+            successFn && successFn(src);
+          };
 
-        if (box1.className.indexOf('ani') == -1) {
-          box1.classList.add('ani');
-        } else {
-          box1.classList.remove('ani');
+          image.onerror = function(error) {
+            successFn && successFn(src);
+          };
+        },
+        "preloadImages": function preloadImages(srcs, doneFn, progressFn) {
+          var _this = this;
+
+          if (!Array.isArray(srcs)) {
+            console.log('第一个参数只能是一个数组');
+          } else {
+            var allCount = srcs.length;
+            var doneCount = 0;
+            srcs.forEach(function(srcItem) {
+              _this.preloadImage(srcItem, function() {
+                doneCount++;
+                progressFn && progressFn(Math.ceil(100 * doneCount / allCount));
+
+                if (doneCount === allCount) {
+                  doneFn && doneFn();
+                }
+              });
+            });
+          }
         }
+      },
+      "page1": {},
+      "page2": {
+        "data": {
+          "playing": true,
+          "selectList": {}
+        },
+        "created": function created() {
+          // 售货员动画
+          var box1 = this.query('.blinker-box');
+          box1.style.display = 'block';
+          var that = this;
 
-        setTimeout(function () {
-          changeImg();
-        }, 1000);
+          function changeImg() {
+            console.log('便动画');
+
+            if (box1.className.indexOf('ani') == -1) {
+              box1.classList.add('ani');
+            } else {
+              box1.classList.remove('ani');
+            }
+
+            setTimeout(function() {
+              if (that.data.playing) changeImg();
+            }, 1000);
+          }
+
+          setTimeout(function() {
+            changeImg();
+          }, 1000);
+        },
+        "showShop": function showShop() {
+          new Audio("./static/resource/click.mp3").play();
+          console.log(this.$el);
+          this.data.playing = false;
+          this.$el.classList.add('shop');
+          owo.tool.toast('货架可以左右滑动哦!');
+        },
+        "gouwu": function gouwu() {
+          new Audio("./static/resource/click.mp3").play();
+          this.query('.gwc-0').style.display = 'block';
+        },
+        "select": function select(ind) {
+          var _this2 = this;
+
+          new Audio("./static/resource/click.mp3").play();
+          this.data.selectList[ind] = this.$target.src;
+          var buyNum = 0;
+          var newHtml = '';
+
+          var _loop = function _loop(key) {
+            if (Object.hasOwnProperty.call(_this2.data.selectList, key)) {
+              var element = _this2.data.selectList[key];
+
+              if (element) {
+                buyNum++;
+                newHtml += "<div class=\"item\" style=\"background-image:url(" + element + ");\" o-tap=\"noSelect(" + key + ")\"></div>";
+                document.querySelector('.select-' + key).classList.add('run');
+                setTimeout(function() {
+                  document.querySelector('.select-' + key).style.display = 'none';
+                  document.querySelector('.select-' + key).classList.remove('run');
+                }, 2000); // document.querySelector('.select-' + key).style.display = 'none'
+              } else {
+                document.querySelector('.select-' + key).style.display = 'block';
+              }
+            }
+          };
+
+          for (var key in this.data.selectList) {
+            _loop(key);
+          }
+
+          if (buyNum >= 1) {
+            this.query('.next').style.display = 'block';
+          } else {
+            this.query('.next').style.display = 'none';
+          }
+
+          document.querySelector('.gouwu .num').innerText = buyNum;
+          document.querySelector('.gouwu-2 .num').innerText = buyNum;
+          console.log(this.data.selectList);
+          document.querySelector('.item-show-box').innerHTML = newHtml;
+          setTimeout(function() {
+            _this2.handleEvent();
+          }, 0);
+          this.query('.gouwu').classList.add('ex');
+          setTimeout(function() {
+            _this2.query('.gouwu').classList.remove('ex');
+          }, 1000);
+        },
+        "noSelect": function noSelect(ind) {
+          var _this3 = this;
+
+          new Audio("./static/resource/click.mp3").play();
+          this.data.selectList[ind] = null;
+          var buyNum = 0;
+          var newHtml = '';
+
+          for (var key in this.data.selectList) {
+            if (Object.hasOwnProperty.call(this.data.selectList, key)) {
+              var element = this.data.selectList[key];
+
+              if (element) {
+                buyNum++;
+                newHtml += "<div class=\"item\" style=\"background-image:url(" + element + ");\" o-tap=\"noSelect(" + key + ")\"></div>";
+                document.querySelector('.select-' + key).style.display = 'none'; // document.querySelector('.select-' + key).classList.add('run')
+              } else {
+                document.querySelector('.select-' + key).style.display = 'block';
+              }
+            }
+          }
+
+          document.querySelector('.gouwu .num').innerText = buyNum;
+          document.querySelector('.gouwu-2 .num').innerText = buyNum;
+          console.log(this.data.selectList);
+          document.querySelector('.item-show-box').innerHTML = newHtml;
+          setTimeout(function() {
+            _this3.handleEvent();
+          }, 0);
+        }
+      },
+      "page3": {
+        "show": function show() {
+          document.querySelector('.press').style.width = '584px';
+          setTimeout(function() {
+            owo.go('page4//rotateRightSideFirst/moveFromRight&&delay200//rotateLeftSideFirst/moveFromLeft&&delay200');
+          }, 4000);
+        }
+      },
+      "page4": {
+        "show": function show() {
+          var list = owo.script.page2.data.selectList;
+          var buyNum = 0;
+          var newHtml = '';
+
+          for (var key in list) {
+            if (Object.hasOwnProperty.call(list, key)) {
+              var element = list[key];
+
+              if (element) {
+                buyNum++;
+                newHtml += "<div class=\"item\" style=\"background-image:url(" + element + ");\"></div>";
+              }
+            }
+          }
+
+          document.querySelector('.item-box').innerHTML = newHtml;
+          this.query('.num').innerText = buyNum;
+          this.query('.name').innerText = document.querySelector('.name input').value;
+        }
+      },
+      "bg": {},
+      "name": {},
+      "music": {
+        "data": {
+          "music": null,
+          "musicIsPlay": false
+        },
+        "switchPlay": function switchPlay() {
+          this.data.musicIsPlay ? this.pause() : this.play();
+        },
+        "play": function play() {
+          console.log('播放音乐');
+
+          if (!this.data.musicIsPlay) {
+            this.data.musicIsPlay = true;
+            this.data.music = new Audio("https://cunchu.site/people/music/%E8%80%81%E5%8C%97%E4%BA%AC%E8%83%A1%E5%90%8C_mini.mp3");
+            this.data.music.volume = 0.2;
+            this.data.music.loop = true;
+            this.data.music.play();
+            var icon = document.getElementsByClassName('music-icon')[0];
+            icon.src = 'https://cunchu.site/ozzx/resource/music.png';
+            icon.classList.add('active');
+          }
+        },
+        "pause": function pause() {
+          if (this.data.musicIsPlay) {
+            this.data.musicIsPlay = false;
+            this.data.music.pause();
+            var icon = document.getElementsByClassName('music-icon')[0];
+            icon.src = 'https://cunchu.site/ozzx/resource/music.png';
+            icon.classList.remove('active');
+          }
+        }
       }
+    };
+  </script>
 
-      setTimeout(function () {
-        changeImg();
-      }, 1000);
-    }
-  },
-  "page3": {
-    "show": function show() {
-      setTimeout(function () {
-        owo.go('page4//rotateRightSideFirst/moveFromRight&&delay200//rotateLeftSideFirst/moveFromLeft&&delay200');
-      }, 2000);
-    }
-  },
-  "page4": {}
-};
-</script>
+  <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="https://cunchu.site/owo/plug/autoScale.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script>
 
-    <script src="http://tools.people.com.cn/libs/jquery/1.11.1/jquery-1.11.1.min.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="https://cunchu.site/owo/plug/autoScale.js" type="text/javascript"  charset="UTF-8"></script>
-    <script src="./static/js/main.js" type="text/javascript"  charset="UTF-8"></script>
+  <script src="./static/js/toast.js" type="text/javascript" charset="UTF-8"></script>
+</body>
 
-  </body>
 </html>

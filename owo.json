@@ -4,7 +4,7 @@
 	"title": "{TAG_14226_TAG}",
 	"scheme": [],
 	"outFolder": "./dist",
-	"container": "scale-box",
+	"container": "",
 	"resourceFolder": "./src/resource",
 	"headList": [
 		{
@@ -85,6 +85,11 @@
 			"name": "main",
 			"src": "./src/main.js",
 			"resource": true
+		},
+		{
+			"name": "toast",
+			"afterbody": true,
+			"src": "./owo_modules/toast.js"
 		}
 	],
 	"styleList": [
@@ -119,6 +124,21 @@
 			"name": "page4",
 			"src": "/src/page/page4.owo",
 			"type": "page"
+		},
+		{
+			"name": "bg",
+			"src": "/src/page/bg.owo",
+			"type": "block"
+		},
+		{
+			"name": "name",
+			"src": "/src/page/name.owo",
+			"type": "page"
+		},
+		{
+			"name": "music",
+			"src": "https://template.owo.ink/bc59e31ef893b3fd.owo",
+			"type": "block"
 		}
 	],
 	"mode": {

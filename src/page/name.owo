@@ -1,0 +1,46 @@
+<template lang="pug">
+.name
+  .scale-box
+    img.so.so-0(src="@|name-17.jpg|")
+    img.so.so-1(src="@|name-56.png|")
+    img.so.so-2(src="@|name-55.png|")
+    input(type="text")
+    img.so.xiehaole(src="@|xiehaol.png|" go="page3//rotateRightSideFirst/moveFromRight&&delay200//rotateLeftSideFirst/moveFromLeft&&delay200")
+</template>
+<script>
+module.exports = {
+}
+</script>
+<style lang="less">
+.so-0 {
+  left: 0px;
+  top: 0px;
+  z-index: 2;
+}
+.so-1 {
+  left: 0px;
+  top: 602px;
+  z-index: 4;
+}
+.so-2 {
+  left: 340px;
+  top: 437px;
+  z-index: 4;
+}
+.xiehaole {
+  left: 360px;
+  top: 925px;
+  z-index: 9;
+}
+input {
+  position: absolute;
+  top: 515px;
+  font-size: 40px;
+  line-height: 70px;
+  width: 179px;
+  left: 187px;
+  z-index: 10;
+  background-color: transparent;
+  border: none;
+}
+</style>
